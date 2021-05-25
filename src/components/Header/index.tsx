@@ -14,27 +14,28 @@ export default function Header() {
                 "100px"]}
             align="center"
             justify="flex-start"
+            borderBottom="1px solid"
         >
             <Image
                 w={["97px", "184px"]}
                 src="/logo.jpg"
-                alt="Um avião voando sobre o nome da marca World Trip"
+                alt="Dois balões de conversa em formato de cadeias orgânicas acima do nome da marca"
                 justifySelf="center"
                 gridColumn="2"
             />
             <Flex
                 w="100%"
-                maxW="1260px"
+                maxW="1360px"
                 alignItems="center"
                 justifyContent="center"
             >
                 <Link href="/">
                     <a>
                         <Text
-                            _hover={{ color: "orange.200" }}
+                            _hover={{ color: "orange.100" }}
                             fontWeight="extrabold"
                             fontSize={["0.8rem", 'md']}
-                            transition= "color 0.2s"
+                            transition= "color 0.3s"
                             padding="0 1.5rem"
                             color="orange.300"
                         >Home</Text>
@@ -43,10 +44,10 @@ export default function Header() {
                 <Link href="/cursos">
                     <a>
                         <Text
-                            _hover={{ color: "orange.200" }}
+                            _hover={{ color: "orange.100" }}
                             fontWeight="extrabold"
                             fontSize={["0.8rem", 'md']}
-                            transition= "color 0.2s"
+                            transition= "color 0.3s"
                             padding="0 1.5rem"
                             color="orange.300"
                         >Cursos</Text>
@@ -55,10 +56,10 @@ export default function Header() {
                 <Link href="/quiz">
                     <a>
                         <Text
-                            _hover={{ color: "orange.200" }}
+                            _hover={{ color: "orange.100" }}
                             fontWeight="extrabold"
                             fontSize={["0.8rem", 'md']}
-                            transition= "color 0.2s"
+                            transition= "color 0.3s"
                             padding="0 1.5rem"
                             color="orange.300"
                         >Quiz</Text>
