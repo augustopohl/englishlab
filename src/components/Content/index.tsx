@@ -1,7 +1,18 @@
-import { Image } from "@chakra-ui/image";
 import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
+import React from "react";
+import Lottie from "react-lottie";
+import animationData from "../../lotties/guy-studying.json";
 
 export default function Content() {
+    const defaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: animationData,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+
     return (
         <>
             <Flex direction="row">
@@ -35,15 +46,15 @@ export default function Content() {
             </Text>
                 </Box>
 
-                <Image
+                <Flex
                     my={["8", "20"]}
-                    filter="drop-shadow(2px 3px 4px black)"
                     w={["300px", "300px", "300px", "480px"]}
                     display={["none", "none", "block"]}
-                    src="/studying.png"
-                    alt="Mulher segurando um laptop"
+                    alt="Homem segurando um livro"
                     mr="100"
-                />
+                >
+                    <Lottie options={defaultOptions} height={400} width={400} />
+                </Flex>
 
             </Flex>
         </>
