@@ -1,18 +1,9 @@
 import { Box, Flex, Heading, Text, Link } from "@chakra-ui/layout";
 import React from "react";
-import Lottie from "react-lottie";
-import animationData from "../../lotties/guy-studying.json";
+import Lootie from "./BoyLootie";
+import Divider from "./Divider";
 
 export default function Content() {
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-            preserveAspectRatio: "xMidYMid slice"
-        }
-    };
-
     return (
         <>
             <Flex direction="row">
@@ -40,19 +31,19 @@ export default function Content() {
                         color="gray.700"
                         textAlign="justify"
                     >
-                        Se você quer aprender Inglês, você com certeza não está sozinho!<br/>
-                        <br/>
+                        Se você quer aprender Inglês, você com certeza não está sozinho!<br />
+                        <br />
                         De acordo com a organização <Link
                             href="https://www.britishcouncil.cn/en/EnglishGreat/numbers"
                             isExternal={true}
                         >
                             <strong>British Council</strong>
                         </Link>, existem aproximadamente 1,5 bilhões de pessoas estudando inglês mundo a fora. E claro, com um bom motivo.
-                        <br/>
+                        <br />
                         Aprender a tão famosa língua universal pode potencializar não só sua carreira <strong>acadêmica</strong> ou <strong>profissional</strong>, mas também
-                        obter sucesso em conquistas pessoais tais como conhecer pessoas, <strong>viajar o mundo</strong> e conhecer as mais diversas culturas. Mas querer aprender Inglês é apenas uma parte da equação.<br/>
+                        obter sucesso em conquistas pessoais tais como conhecer pessoas, <strong>viajar o mundo</strong> e conhecer as mais diversas culturas. Mas querer aprender Inglês é apenas uma parte da equação.<br />
                         Então, como encontrar o <strong>curso de inglês</strong> que encaixa com suas metas e expectativas e realmente faz diferença no seu aprendizado? Para responder essa pergunta, aqui vão algumas dicas fundamentais para você colocar em prática. <strong>Confira!</strong>
-            </Text>
+                    </Text>
                 </Box>
 
                 <Flex
@@ -62,10 +53,10 @@ export default function Content() {
                     alt="Homem segurando um livro"
                     mr="100"
                 >
-                    <Lottie options={defaultOptions} height={400} width={400} />
+                    <Lootie />
                 </Flex>
             </Flex>
-            <Box w={["60px", "100px"]} mx="auto" h="1.4px" bg="gray.600" my={["1", "1"]} />
+            <Divider />
         </>
     )
 }
