@@ -1,7 +1,6 @@
 import { Box, Flex, Heading, Text, Link } from "@chakra-ui/layout";
 import React from "react";
 import Lootie from "./BoyLootie";
-import Divider from "./Divider";
 
 export default function Content() {
     return (
@@ -10,7 +9,7 @@ export default function Content() {
                 <Box maxWidth="1160px"
                     mx="auto"
                     mb="10"
-                    px="5rem"
+                    px={["10", "5"]}
                     my={["8", "20"]}
                 >
                     <Heading
@@ -56,7 +55,6 @@ export default function Content() {
                     <Lootie />
                 </Flex>
             </Flex>
-            <Divider />
         </>
     )
 }

@@ -7,7 +7,7 @@ export default function Divider() {
             mx="auto"
             h="1.4px"
             bg="gray.600"
-            my={["1", "1"]}
+            my={["1", "10"]}
         />
     )
 
