@@ -7,15 +7,13 @@ export const LinkGrid = (props: SimpleGridProps) => (
     <Box minW="130px">
       <FooterHeading mb="4">Cursos</FooterHeading>
       <Stack>
-        <Link>Como funcionam</Link>
+        <Link>Tipos de cursos</Link>
         <Link>Preços</Link>
       </Stack>
     </Box>
     <Box minW="130px">
       <Stack>
-        <Link>Privacidade</Link>
-        <Link>Termos</Link>
-        <Link>Licença</Link>
+        <Link>Termos e privacidade</Link>
       </Stack>
     </Box>
   </SimpleGrid>

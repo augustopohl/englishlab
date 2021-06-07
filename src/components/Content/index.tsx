@@ -26,7 +26,7 @@ export default function Content() {
                     </Heading>
                     <Text
                         fontSize={["lg", "xl", "xl", "2xl"]}
-                        my={["8", "20"]}
+                        my={["8", "19"]}
                         color="gray.700"
                         textAlign="justify"
                     >
