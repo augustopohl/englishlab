@@ -9,6 +9,7 @@ export default function TipsContent({ children }: TipsContentProps) {
         <Text
             fontSize={["lg", "xl", "xl", "2xl"]}
             my={["8", "20"]}
+            px={["8", "10", "20"]}
             color="gray.700"
             textAlign="justify"
         >

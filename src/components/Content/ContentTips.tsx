@@ -17,7 +17,7 @@ export default function ContentTips({ tips }: TipsProps) {
                         my={["8", "30"]}
                     >
                         <Flex
-                            my={["50", "100"]}
+                            my={["50", "55"]}
                             w="100%"
                             h={["163px", "250px", "350px", "535px"]}
                             bgImage={`url(${tip.image})`}
@@ -25,6 +25,7 @@ export default function ContentTips({ tips }: TipsProps) {
                             bgRepeat="no-repeat"
                             bgSize="cover"
                             boxShadow="1px 2px 2px rgba(0, 0, 0, 0.5)"
+                            borderRadius="3px"
                         />
                         <TipsTitle>{tip.title}</TipsTitle>
                         <TipsContent>
